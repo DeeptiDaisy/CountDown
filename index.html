@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>countdown</title>
+</head>
+
+<body>
+    <div
+        class="container mx-auto py-4 flex justify-center items-center flex-col h-screen space-y-5 bg-neutral-400 dark:bg-slate-700 dark:text-gray-300">
+        <h1 class="flex justify-center align-center text-5xl font-mono">
+            Count Down
+        </h1>
+        <input type="input" id="input" placeholder="Enter a number here for count down"
+            class="rounded-lg border-gray-700 border-2 w-4/12 text-2xl text-center p-2 text-gray-900 dark:bg-slate-800 dark:text-gray-300 font-mono md:min-w-[500px] min-w-full" />
+        <button type="button" class="bg-sky-700 p-2 text-lg rounded-md font-mono" id="start">
+            Start CountDown
+        </button>
+        <div class="flex justify-center align-center w-4/5">
+            <p class="text-red-700 dark:text-red-400 text-5xl invisible" id="count">
+                0
+            </p>
+        </div>
+        <!-- Success -->
+        <div class="items-center gap-4 rounded bg-gray-900 p-4 text-white hidden animate-bounce absolute top-0"
+            role="alert" id="alert">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-green-500" viewBox="0 0 20 20"
+                fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clip-rule="evenodd" />
+            </svg>
+
+            <strong class="text-sm font-normal"> Countdown Ended </strong>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
